@@ -7,11 +7,11 @@ import Tabs from '@material-ui/core/Tabs';
 import TabList from '@material-ui/lab/TabList';
 import TabPanel from '@material-ui/lab/TabPanel';
 
-import Card from '../Card/Card'
+import Cards from '../../../containers/Cards/Cards'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: 'grey',
+    backgroundColor: 'white',
   },
 }));
 
@@ -40,9 +40,11 @@ function NavigationBar() {
           </TabList>
         </Tabs>
         </AppBar>
-        <TabPanel value="1"><Card /></TabPanel>
-        <TabPanel value="2">Item Two</TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
+        <TabPanel style={{
+          backgroundColor:'#53dbf3'
+        }} value="1"><Cards /></TabPanel>
+        <TabPanel value="2"><Cards /></TabPanel>
+        <TabPanel value="3"><Cards /></TabPanel>
       </TabContext>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NavigationBar from '../components/UI/NavigationBar/NavigationBar'
+import NavigationBar from '../../components/UI/NavigationBar/NavigationBar'
 
 const Layout = () => {
     return(
