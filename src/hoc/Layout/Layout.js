@@ -1,11 +1,12 @@
 import React from 'react'
 
-import NavigationBar from '../../components/UI/NavigationBar/NavigationBar'
+// import NavigationBar from '../../components/UI/NavigationBar/NavigationBar'
+import LandingPage from '../../components/LandingPage/LandingPage'
 
 const Layout = () => {
     return(
         <div>
-            <NavigationBar />
+            <LandingPage />
         </div>
     )
 }
