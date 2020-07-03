@@ -21,7 +21,7 @@ function NavBar() {
       //   </Form> */}
       // </Navbar>
     
-      <Navbar style={{
+      <Navbar fixed="top"  style={{
         color:'white',
       }} bg="primary" expand="lg">
         <Navbar.Brand style={{
