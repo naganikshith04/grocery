@@ -1,5 +1,6 @@
 {
   "projects": {
     "default": "reactgrocery-0411",
+    "reactGrocery": "reactgrocery-0411"
   }
 }
