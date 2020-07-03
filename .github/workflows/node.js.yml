@@ -40,10 +40,4 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-<<<<<<< HEAD
           FIREBASE_TOKEN: LVyzLzxax4sdvj4qXbZRbcslY70GNxtdueOgWK4H
-=======
-          FIREBASE_TOKEN: dggMg46Y6sxi36SJNCyO5opgRW9SuhJNz965DbKJ
-      - name: Firebase GitHub Action
-        uses: pizzafox/firebase-action@1.0.7
->>>>>>> 3f706af58582ba9939c0de27641c60942ca2b5c7
