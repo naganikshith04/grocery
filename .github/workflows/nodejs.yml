@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env: 
-      working-directory: ./front-end
+      working-directory: ./
       CI: False
 
     strategy:
