@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       working-directory: ./
-      CI: False
+      CI: True
 
     strategy:
       matrix:
