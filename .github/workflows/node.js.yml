@@ -41,3 +41,5 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      - name: Firebase GitHub Action
+        uses: pizzafox/firebase-action@1.0.7
