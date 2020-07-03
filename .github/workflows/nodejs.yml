@@ -25,9 +25,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
  
-    - run: yarn
+    - run: npm install
       working-directory: ${{env.working-directory}}    
-    - run: yarn build
+    - run: npm run build
       working-directory: ${{env.working-directory}}
     - run: npm install -g firebase-tools
       working-directory: ${{env.working-directory}}      
