@@ -7,7 +7,6 @@ import Stepper from './Stepper'
 import Button from '../../components/UI/Button/Button'
 import './MainText.css'
 import Na from '../mdb/Na.js'
-import MainImg from '../../assests/main.jpg'
 
 const MainText = () => {
 

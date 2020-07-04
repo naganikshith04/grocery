@@ -11,17 +11,14 @@ import {
   MDBMask,
   MDBRow,
   MDBCol,
-  MDBIcon,
-  MDBBtn,
   MDBView,
   MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBFormInline,
   MDBAnimation
 } from "mdbreact";
 import "./Na.css";
+import { Button } from "@material-ui/core";
+
+import Text from './Text' 
 
 class ClassicFormPage extends React.Component {
   state = {
@@ -45,10 +42,17 @@ class ClassicFormPage extends React.Component {
       <div id="classicformpage">
         <Router>
           <div>
-            <MDBNavbar dark expand="md" fixed="top">
+            <MDBNavbar style={{
+
+            }} light expand="md" fixed="top">
               <MDBContainer>
                 <MDBNavbarBrand>
-                  <strong className="white-text">MDB</strong>
+                  <strong 
+                    style={{
+                        color:'#1a4d57',
+                        fontSize:'22px'
+                    }}
+                  >Grocery</strong>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler
                   onClick={this.toggleCollapse("navbarCollapse")}
@@ -60,27 +64,54 @@ class ClassicFormPage extends React.Component {
                 >
                   <MDBNavbarNav left>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Home</MDBNavLink>
+                      <MDBNavLink style={{
+                        color:'#1a4d57',
+                        fontSize:'21px',
+                        paddingLeft:'30px'
+                    }} to="#!">Home</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Link</MDBNavLink>
+                      <MDBNavLink style={{
+                        color:'#1a4d57',
+                        fontSize:'21px'
+                    }} to="#!">Link</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to="#!">Profile</MDBNavLink>
+                      <MDBNavLink style={{
+                        color:'#1a4d57',
+                        fontSize:'21px'
+                    }} to="#!">Profile</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
                     <MDBNavItem>
-                      <MDBFormInline waves>
-                        <div className="md-form my-0">
-                          <input
-                            className="form-control mr-sm-2"
-                            type="text"
-                            placeholder="Search"
-                            aria-label="Search"
-                          />
-                        </div>
-                      </MDBFormInline>
+                      {/* <MDBFormInline waves> */}
+                      <Button style={{
+                        // backgroundColor:"#F0FCED",
+                        borderRadius:'32px',
+                        color:'#7A9C99',
+                        border:'1px solid #1a4d57',
+                        // paddingLeft:'23px',
+                        // paddingTop:'5px',
+                        // paddingRight:'23px',
+                        // paddingBottom:'7px',
+                        padding:'7px',
+                        paddingLeft:'15px',
+                        paddingRight:'17px',
+                    }}>Login</Button>
+                    <Button style={{
+                        marginLeft:'18px',
+                        color:'white',
+                        backgroundColor:"#1a4d57",
+                        borderRadius:'32px',
+                        // paddingLeft:'23px',
+                        // paddingRight:'23px',
+                        // paddingBottom:'10px',
+                        padding:'7px',
+                        paddingLeft:'17px',
+                        paddingRight:'17px',
+                    }}>Signup</Button>
+                      {/* </MDBFormInline> */}
                     </MDBNavItem>
                   </MDBNavbarNav>
                 </MDBCollapse>
@@ -99,79 +130,44 @@ class ClassicFormPage extends React.Component {
                   delay=".3s"
                   className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
                 >
-                  <h1 className="h1-responsive font-weight-bold">
-                    Sign up right now!
+                  <h1 style={{
+                      paddingTop:'50px',
+                      color:'#85D291'
+                  }} className="h1-responsive font-weight-bold">
+                    Bring the store <br/>
+                    to you door
                   </h1>
                   <hr className="hr-light" />
-                  <h6 className="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem repellendus quasi fuga nesciunt dolorum nulla magnam
-                    veniam sapiente, fugiat! Commodi sequi non animi ea dolor
-                    molestiae, quisquam iste, maiores. Nulla.
-                  </h6>
-                  <MDBBtn outline color="white">
-                    Learn More
-                  </MDBBtn>
-                </MDBAnimation>
+                  <h6 style={{
+                      color:'#85D291'
+                  }} className="mb-4">
+                      Order from local store you trust
+                      <br></br>
+                      <br/>
+                      download our app from
+                      <br/>
+                      <br/>
+                      <br/>
 
-                {/* <MDBCol md="6" xl="5" className="mb-4">
-                  <MDBAnimation type="fadeInRight" delay=".3s">
-                    <MDBCard id="classic-card">
-                      <MDBCardBody className="white-text">
-                        <h3 className="text-center">
-                          <MDBIcon icon="user" /> Register:
-                        </h3>
-                        <hr className="hr-light" />
-                        <MDBInput
-                          className="white-text"
-                          iconClass="white-text"
-                          label="Your name"
-                          icon="user"
-                        />
-                        <MDBInput
-                          className="white-text"
-                          iconClass="white-text"
-                          label="Your email"
-                          icon="envelope"
-                        />
-                        <MDBInput
-                          className="white-text"
-                          iconClass="white-text"
-                          label="Your password"
-                          icon="lock"
-                          type="password"
-                        />
-                        <div className="text-center mt-4 black-text">
-                          <MDBBtn color="indigo">Sign Up</MDBBtn>
-                          <hr className="hr-light" />
-                          <div className="text-center d-flex justify-content-center white-label">
-                            <a href="#!" className="p-2 m-2">
-                              <MDBIcon
-                                fab
-                                icon="twitter"
-                                className="white-text"
-                              />
-                            </a>
-                            <a href="#!" className="p-2 m-2">
-                              <MDBIcon
-                                fab
-                                icon="linkedin"
-                                className="white-text"
-                              />
-                            </a>
-                            <a href="#!" className="p-2 m-2">
-                              <MDBIcon
-                                fab
-                                icon="instagram"
-                                className="white-text"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </MDBCardBody>
-                    </MDBCard>
-                  </MDBAnimation>
-                </MDBCol> */}
+                      <Button style={{
+                          paddingRight:'17px',
+                          marginRight:'20px',
+                          paddingLeft:'2px',
+                          padding:'5px',
+                          borderRadius:'21px',
+                          border:'2px solid #8c9892',
+                          color:'#8c9892'
+                      }}>PlayStore</Button>    
+                      <Button style={{
+                          paddingLeft:'170spx',
+                          padding:'5px',
+                          borderRadius:'21px',
+                          border:'2px solid #8c9892',
+                          color:'#8c9892'
+                      }}>AppStore</Button>
+                  </h6>
+                  
+                </MDBAnimation>
               </MDBRow>
             </MDBContainer>
           </MDBMask>
@@ -181,13 +177,7 @@ class ClassicFormPage extends React.Component {
           <MDBRow className="py-5">
             <MDBCol md="12" className="text-center">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <Text />
               </p>
             </MDBCol>
           </MDBRow>
