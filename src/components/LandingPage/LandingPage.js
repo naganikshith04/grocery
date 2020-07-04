@@ -7,7 +7,7 @@ const LandingPage = () => {
     return(
         // <SideDrawer />
         <div>
-            <NavBar />
+            {/* <NavBar /> */}
             <MainText />
         </div>
     )

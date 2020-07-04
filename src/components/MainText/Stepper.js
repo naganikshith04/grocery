@@ -140,7 +140,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginRight: theme.spacing(1),
-    backgroundColor : '#007bff'
+    // backgroundColor : '#007bff'
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    backgroundImage:'-color-stop(51%,#00bade),to(#4a77f4)), -webkit-linear-gradient(left,#4a77f4,#00bade 51%,#4a77f4),linear-gradient(90deg,#4a77f4 0,#00bade 51%,#4a77f4)',
   },
   instructions: {
     marginTop: theme.spacing(1),
@@ -214,7 +216,7 @@ export default function CustomizedSteppers() {
           </div>
         ) : (
           <div>
-            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+            <strong><Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography></strong>
             <div>
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                 Back

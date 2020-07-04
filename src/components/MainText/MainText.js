@@ -1,23 +1,35 @@
 import React from 'react'
-import { Jumbotron  } from 'react-bootstrap'
+import { Jumbotron ,Image } from 'react-bootstrap'
 
 import CardText from './CardText'
 import Aux from '../../hoc/Auxi/Auxi'
 import Stepper from './Stepper'
 import Button from '../../components/UI/Button/Button'
+import './MainText.css'
+import Na from '../mdb/Na.js'
+import MainImg from '../../assests/main.jpg'
 
 const MainText = () => {
+
     return(
         <Aux>    
-            <div style={{
+            
+            {/* <div style={{
+                // minHeight: "500px",
+                backgroundColor : 'rgb(229, 229, 237)',
                 margin:'25px',
+                marginTop:'100px',
                 borderRadius : '18px',
                 boxShadow:'5px 10px 7px 8px #eeee , 5px 5px #fff' 
-            }}>
-                <Jumbotron style={{
+            }}> */}
+                <Na />
+                {/* <Jumbotron style={{
                     backgroundColor:'white',
                     borderRadius: '23px'
                 }}>
+                    <Image src={MainImg} fluid style={{
+                        height:''
+                    }} />
                     <h1>What do we do</h1>
                         <p>
                             Afraid of ordering groceries from Online shopping websites.<br/>
@@ -28,6 +40,7 @@ const MainText = () => {
                     </p>
                 </Jumbotron>
             </div>
+
             <div 
             style={{
                 display:'inline-block',
@@ -37,8 +50,8 @@ const MainText = () => {
             </div>
             <div>
                 <Stepper />
-            </div>
-        </Aux>
+        </div>*/}
+        </Aux> 
     ) 
 }
 
