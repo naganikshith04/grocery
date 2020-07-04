@@ -21,7 +21,6 @@ const MainText = () => {
                 borderRadius : '18px',
                 boxShadow:'5px 10px 7px 8px #eeee , 5px 5px #fff' 
             }}> */}
-                <Na />
                 {/* <Jumbotron style={{
                     backgroundColor:'white',
                     borderRadius: '23px'
@@ -50,6 +49,14 @@ const MainText = () => {
             <div>
                 <Stepper />
         </div>*/}
+
+
+
+
+            
+                <Na />
+
+
         </Aux> 
     ) 
 }

@@ -43,7 +43,7 @@ class ClassicFormPage extends React.Component {
         <Router>
           <div>
             <MDBNavbar style={{
-
+                
             }} light expand="md" fixed="top">
               <MDBContainer>
                 <MDBNavbarBrand>
@@ -139,7 +139,8 @@ class ClassicFormPage extends React.Component {
                   </h1>
                   <hr className="hr-light" />
                   <h6 style={{
-                      color:'#85D291'
+                      color:'#85D291',
+                      fontSize:'20px'
                   }} className="mb-4">
                       Order from local store you trust
                       <br></br>
