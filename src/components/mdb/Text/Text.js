@@ -1,5 +1,4 @@
 import React from 'react'
-import {Image} from 'react-bootstrap'
 
 // import Aux from '../../../hoc/Auxi/Auxi'
 import Phone from './Phone'

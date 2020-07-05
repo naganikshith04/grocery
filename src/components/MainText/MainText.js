@@ -1,10 +1,10 @@
 import React from 'react'
-import { Jumbotron ,Image } from 'react-bootstrap'
+// import { Jumbotron ,Image } from 'react-bootstrap'
 
-import CardText from './CardText'
+// import CardText from './CardText'
 import Aux from '../../hoc/Auxi/Auxi'
-import Stepper from './Stepper'
-import Button from '../../components/UI/Button/Button'
+// import Stepper from './Stepper'
+// import Button from '../../components/UI/Button/Button'
 import './MainText.css'
 import Na from '../mdb/Na.js'
 

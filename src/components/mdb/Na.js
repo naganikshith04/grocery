@@ -19,6 +19,7 @@ import "./Na.css";
 import { Button } from "@material-ui/core";
 
 import Text from './Text/Text' 
+import Header from '../NavBar/Header'
 
 class ClassicFormPage extends React.Component {
   state = {
@@ -42,6 +43,7 @@ class ClassicFormPage extends React.Component {
       <div id="classicformpage">
         <Router>
           <div>
+            <Header />
             <MDBNavbar style={{
                 
             }} light expand="md" fixed="top">

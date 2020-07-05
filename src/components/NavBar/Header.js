@@ -1,23 +1,66 @@
-import React from 'react'
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+// import throttle from "lodash/throttle";
+import useWindowScrollPosition from "@rehooks/window-scroll-position";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import CartIcon from '@material-ui/icons/ShoppingCartRounded';
 
 // import {Nav,Navbar} from 'react-bootstrap'
 import {Navbar,Nav,Button} from 'react-bootstrap'
-import Header from './Header'
 
-function NavBar() {
-    return (
+function Header() {
+  const [change, setChange] = useState(false);
+  const changePosition = 500;
+
+  let position = useWindowScrollPosition();
+  // position == { x: 0, y: 0 }
+
+  if (position.y > changePosition && !change) {
+    setChange(true);
+  }
+
+  if (position.y <= changePosition && change) {
+    setChange(false);
+  }
+
+  let style = {
+    backgroundColor: change ? "#1BAD96" : "transparent",
+    transition: "400ms ease",
+    height: "60px",
+    position: "fixed",
+    right: 0,
+    left: 0,
+    top: 0
+  };
+
+  return (
+    <div style={style}>
+      {/* <h1>Logo</h1> */}
+    </div>
+  );
+}
+
+function Spacer() {
+  let style = {
+    height: "200vh"
+  };
+
+  return <div style={style} />;
+}
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
       <Navbar fixed="top" style={{
         backgroundColor: window.scrollY > 10 ? "white" : "transparent",
         color:'#1a4d57',
-        backgroundColor:'#1BAD96',
+        // backgroundColor:'#1BAD96',
       }}  expand="lg">
         <Navbar.Brand style={{
         color:'#FBFEFB',
         marginLeft:'50px',
       }} href="/home">
-        <Header />
           <strong>Grocery</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -60,8 +103,12 @@ function NavBar() {
              */}
         </Navbar.Collapse>
       </Navbar>
-    
-    )
-  }
-  
-  export default NavBar
+      <Spacer />
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+export default Header

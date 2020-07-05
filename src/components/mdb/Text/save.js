@@ -20,7 +20,8 @@ const Save = () => {
                 color:'#1a4d57',
                 fontSize:'30px',
                 display:'table-cell'}}>
-                <Image style={{
+                <Image fluid style={{
+                    height:'200px'
                     // height:'250px',
                     // width:'100px',
                     // paddingTop:'40px'
@@ -29,7 +30,8 @@ const Save = () => {
                 color:'#1a4d57',
                 fontSize:'30px',
                 display:'table-cell'}}>
-                <Image style={{
+                <Image fluid style={{height:'200px'
+                    
                     // height:'250px',
                     // width:'100px',
                     // paddingTop:'40px'
@@ -37,7 +39,9 @@ const Save = () => {
             </div>
             
             <div style={{display:'table-cell',width:'33%'}}>
-                <Image style={{
+                <Image fluid style={{
+                    height:'200px',
+                    width:'400px'
                     // height:'250px',
                     // width:'100px',
                     // paddingTop:'40px'
