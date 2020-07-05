@@ -18,7 +18,7 @@ import {
 import "./Na.css";
 import { Button } from "@material-ui/core";
 
-import Text from './Text' 
+import Text from './Text/Text' 
 
 class ClassicFormPage extends React.Component {
   state = {
