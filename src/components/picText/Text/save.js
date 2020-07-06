@@ -26,7 +26,9 @@ const Save = () => {
                     // width:'100px',
                     // paddingTop:'40px'
                 }} src={Payasuwish} />
-            </div> <div style={{width: "33%",padding:'50px',
+                <p>Pay as you wish</p>
+            </div>
+            <div style={{width: "33%",padding:'50px',
                 color:'#1a4d57',
                 fontSize:'30px',
                 display:'table-cell'}}>
@@ -35,17 +37,21 @@ const Save = () => {
                     // height:'250px',
                     // width:'100px',
                     // paddingTop:'40px'
-                }} src={SaveTime} />
+                }} src={Savemoney} />
+                <p>Save money</p>
             </div>
             
-            <div style={{display:'table-cell',width:'33%'}}>
+            <div style={{display:'table-cell',
+                fontSize:'30px',
+                width:'33%'}}>
                 <Image fluid style={{
                     height:'200px',
                     width:'400px'
                     // height:'250px',
                     // width:'100px',
                     // paddingTop:'40px'
-                }} src={Savemoney} />
+                }} src={SaveTime} />
+                <p>Save time and prepare food you like</p>
             </div>
             </div>
         </div>

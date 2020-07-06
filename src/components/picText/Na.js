@@ -17,9 +17,9 @@ import {
 } from "mdbreact";
 import "./Na.css";
 import { Button } from "@material-ui/core";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Text from './Text/Text' 
-import Header from '../NavBar/Header'
+import Text from './Text/Text'
 
 class ClassicFormPage extends React.Component {
   state = {
@@ -43,7 +43,8 @@ class ClassicFormPage extends React.Component {
       <div id="classicformpage">
         <Router>
           <div>
-            <Header />
+            {/* <Header /> */}
+            {/* <NavBar /> */}
             <MDBNavbar style={{
                 
             }} light expand="md" fixed="top">
@@ -87,16 +88,10 @@ class ClassicFormPage extends React.Component {
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
                     <MDBNavItem>
-                      {/* <MDBFormInline waves> */}
                       <Button style={{
-                        // backgroundColor:"#F0FCED",
                         borderRadius:'32px',
                         color:'#7A9C99',
                         border:'1px solid #1a4d57',
-                        // paddingLeft:'23px',
-                        // paddingTop:'5px',
-                        // paddingRight:'23px',
-                        // paddingBottom:'7px',
                         padding:'7px',
                         paddingLeft:'15px',
                         paddingRight:'17px',
@@ -106,9 +101,6 @@ class ClassicFormPage extends React.Component {
                         color:'white',
                         backgroundColor:"#1a4d57",
                         borderRadius:'32px',
-                        // paddingLeft:'23px',
-                        // paddingRight:'23px',
-                        // paddingBottom:'10px',
                         padding:'7px',
                         paddingLeft:'17px',
                         paddingRight:'17px',

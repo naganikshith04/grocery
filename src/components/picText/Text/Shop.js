@@ -24,7 +24,7 @@ const Shop = () => {
                 color:'#1a4d57',
                 fontSize:'30px',
                 display:'table-cell'}}>
-                Our shoppers work theie magic<br/>
+                Our shoppers work their magic<br/>
                 {/* Order all types of groceries from<br/>
                 local stores */}
             </div>

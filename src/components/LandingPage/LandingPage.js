@@ -1,13 +1,17 @@
 import React from 'react'
 
 // import NavBar from '../NavBar/NavBar'
-import MainText from '../MainText/MainText'
 // import Header from '../MainText/'
+import Na from '../picText/Na'
+import Footer from '../Footer/Footer'
+import MiddleText from '../middleText/MiddleText'
 
 const LandingPage = () => {
     return(
         <div>
-            <MainText />
+            <Na />
+            <MiddleText />
+            <Footer />
         </div>
     )
 }

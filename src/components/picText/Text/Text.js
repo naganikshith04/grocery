@@ -8,7 +8,10 @@ import Save from './save'
 
 const Text = () => {
     return(
-        <div>
+        <div style={{
+            backgroundColor:'#F9FBFA',
+            width:'100%'
+        }}>
             <Phone />
             <Shop />    
             <Receive />
