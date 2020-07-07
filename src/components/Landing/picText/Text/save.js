@@ -1,10 +1,10 @@
 import React from 'react'
 import {Image} from 'react-bootstrap'
 
-import Aux from '../../../hoc/Auxi/Auxi'
-import Payasuwish from '../../../assests/payasuwish.PNG'
-import Savemoney from '../../../assests/savemoney.PNG'
-import SaveTime from '../../../assests/savetime.PNG'
+import Aux from '../../../../hoc/Auxi/Auxi'
+import Payasuwish from '../../../../assests/payasuwish.PNG'
+import Savemoney from '../../../../assests/savemoney.PNG'
+import SaveTime from '../../../../assests/savetime.PNG'
 
 const Save = () => {
     return(

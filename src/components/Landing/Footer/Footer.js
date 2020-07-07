@@ -71,7 +71,7 @@ const FooterPage = () => {
 				<div style={{
                         paddingTop:'16px'
                     }} >
-					<RoomIcon fontSize='' color='secondary' />
+					<RoomIcon color='secondary' />
 					<p><span></span> Haripuri colony,Hyderabad</p>
 				</div>
 

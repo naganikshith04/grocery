@@ -1,8 +1,8 @@
 import React from 'react'
 import {Image} from 'react-bootstrap'
 
-import Aux from '../../../hoc/Auxi/Auxi'
-import PhoneImg from '../../../assests/phone1.PNG'
+import Aux from '../../../../hoc/Auxi/Auxi'
+import PhoneImg from '../../../../assests/phone1.PNG'
 
 const Phone = () => {
     return(

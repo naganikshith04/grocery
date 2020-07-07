@@ -21,8 +21,8 @@ import { Button  } from "@material-ui/core";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Text from './Text/Text'
-import PlayStore from '../../assests/playstore.png'
-import AppStore from '../../assests/appstore.png'
+import PlayStore from '../../../assests/playstore.png'
+import AppStore from '../../../assests/appstore.png'
 
 class ClassicFormPage extends React.Component {
   state = {
@@ -161,9 +161,7 @@ class ClassicFormPage extends React.Component {
         <MDBContainer>
           <MDBRow className="py-5">
             <MDBCol md="12" className="text-center">
-              <p>
                 <Text />
-              </p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>

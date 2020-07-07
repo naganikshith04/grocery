@@ -1,10 +1,10 @@
 import React from 'react'
 import {Image} from 'react-bootstrap'
 
-import Aux from '../../../hoc/Auxi/Auxi'
-import ShopImg from '../../../assests/shop.PNG'
+import Aux from '../../../../hoc/Auxi/Auxi'
+import RecieveImg from '../../../../assests/recieve.PNG'
 
-const Shop = () => {
+const Phone = () => {
     return(
         <Aux>
         {/* <p style={{
@@ -14,19 +14,21 @@ const Shop = () => {
         }} >Here's how it works</p> */}
         <div  style={{width: '100%', display: "table"}}>
             <div style={{display: "table-row"}}>
-            <div style={{display:'table-cell',width:'50%'}}>
-                <Image style={{
-                    height:'250px',
-                    paddingTop:'40px'
-                }} src={ShopImg} />
-            </div>
             <div style={{width: "50%",padding:'50px',
                 color:'#1a4d57',
                 fontSize:'30px',
                 display:'table-cell'}}>
-                Our shoppers work their magic<br/>
-                {/* Order all types of groceries from<br/>
-                local stores */}
+                Tada!<br/>
+                Your groceries arrive<br/>
+                at your door step
+            </div>
+            
+            <div style={{display:'table-cell',width:'50%'}}>
+                <Image style={{
+                    height:'250px',
+                    width:'100px',
+                    paddingTop:'40px'
+                }} src={RecieveImg} />
             </div>
             </div>
         </div>
@@ -34,4 +36,4 @@ const Shop = () => {
     )
 }
 
-export default Shop
+export default Phone

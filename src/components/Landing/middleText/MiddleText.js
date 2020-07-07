@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
 import {Image} from 'react-bootstrap'
-import Last from '../../assests/last.PNG'
+import Last from '../../../assests/last.PNG'
 import SearchIcon from '@material-ui/icons/Search';
 import Backdrop from '../UI/Backdrop/Backdrop'
 
-import { MDBCol, MDBFormInline, MDBBtn,MDBIcon } from "mdbreact";
+import { MDBCol, MDBFormInline, MDBBtn } from "mdbreact";
 class MiddleText extends Component {
     state = {
         data: null,
@@ -19,20 +19,20 @@ class MiddleText extends Component {
             width:'100%',
             color:'#1a4d57'
         }}>
-        <div class="container">
+        <div className="container">
             <div style={{
                 paddingTop:'100px',
                 paddingBottom:'100px'
-            }} class="row">
-                <div class="col-sm">
+            }} className="row">
+                <div className="col-sm">
                     <Image src={Last} />
                 </div>
-                {/* <div class="col-sm">
+                {/* <div className="col-sm">
                 One of three columns
                 </div> */}
                 <div style={{
                     paddingLeft:'200px',
-                }} class="col-sm">
+                }} className="col-sm">
                     Ready to become a  "grocery-app"?
                     <br></br>
                     <br></br>
@@ -43,7 +43,7 @@ class MiddleText extends Component {
                     <MDBCol md="12">
                     <MDBFormInline className="md-form mr-auto mb-4">
                     <span >
-                        <SearchIcon fontSize='medium'color='primary' />
+                        <SearchIcon  color='primary' />
                     </span><input   
                         style={{
                             borderRadius:'20px'
