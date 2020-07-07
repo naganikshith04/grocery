@@ -22,8 +22,8 @@ class Demo1 extends Component {
           zoom={14}
           style={mapStyles}
           initialCenter={{
-            lat: YOUR_LATITUDE,
-            lng: YOUR_LONGITUDE
+            // lat: YOUR_LATITUDE,
+            // lng: YOUR_LONGITUDE
           }}
         >
          <Marker
