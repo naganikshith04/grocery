@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import {Image} from 'react-bootstrap'
 import Last from '../../assests/last.PNG'
 import SearchIcon from '@material-ui/icons/Search';
+import Backdrop from '../UI/Backdrop/Backdrop'
+
 import { MDBCol, MDBFormInline, MDBBtn,MDBIcon } from "mdbreact";
 class MiddleText extends Component {
     state = {
@@ -53,6 +55,7 @@ class MiddleText extends Component {
                         }} rounded size="md" type="submit" className="mr-auto">
                          Get started
                         </MDBBtn>
+                        <Backdrop />
                         </MDBFormInline>
                     </MDBCol>
                 </div>

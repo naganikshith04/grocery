@@ -13,13 +13,16 @@ import {
   MDBCol,
   MDBView,
   MDBContainer,
-  MDBAnimation
+  MDBAnimation,
 } from "mdbreact";
 import "./Na.css";
-import { Button } from "@material-ui/core";
+import {Image } from 'react-bootstrap'
+import { Button  } from "@material-ui/core";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Text from './Text/Text'
+import PlayStore from '../../assests/playstore.png'
+import AppStore from '../../assests/appstore.png'
 
 class ClassicFormPage extends React.Component {
   state = {
@@ -122,44 +125,31 @@ class ClassicFormPage extends React.Component {
                 <MDBAnimation
                   type="fadeInLeft"
                   delay=".3s"
-                  className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
-                >
+                  className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
                   <h1 style={{
                       paddingTop:'50px',
-                      color:'#85D291'
+                      color:'##1F2A48'
                   }} className="h1-responsive font-weight-bold">
                     Bring the store <br/>
                     to you door
                   </h1>
                   <hr className="hr-light" />
                   <h6 style={{
-                      color:'#85D291',
+                      color:'##1F2A48',
                       fontSize:'20px'
                   }} className="mb-4">
                       Order from local store you trust
-                      <br></br>
                       <br/>
                       download our app from
                       <br/>
-                      <br/>
-                      <br/>
-
-                      <Button style={{
-                          paddingRight:'17px',
-                          marginRight:'20px',
-                          paddingLeft:'2px',
-                          padding:'5px',
-                          borderRadius:'21px',
-                          border:'2px solid #8c9892',
-                          color:'#8c9892'
-                      }}>PlayStore</Button>    
-                      <Button style={{
-                          paddingLeft:'170spx',
-                          padding:'5px',
-                          borderRadius:'21px',
-                          border:'2px solid #8c9892',
-                          color:'#8c9892'
-                      }}>AppStore</Button>
+                      <a href="http://www.google.com" >
+                        <Image src={PlayStore}/>
+                      </a>
+                      <a style={{
+                        margin:'20px'
+                      }} href="http://www.google.com">
+                        <Image src={AppStore}/>
+                      </a>
                   </h6>
                   
                 </MDBAnimation>
